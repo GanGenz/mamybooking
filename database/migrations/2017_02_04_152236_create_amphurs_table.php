@@ -15,6 +15,10 @@ class CreateAmphursTable extends Migration
     {
         Schema::create('amphurs', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('geo_id')->nullable();
+            $table->integer('province_id')->nullable();
+            $table->string('amphur_code')->nullable();
+            $table->string('amphur_name')->nullable();
             $table->timestamps();
         });
     }
