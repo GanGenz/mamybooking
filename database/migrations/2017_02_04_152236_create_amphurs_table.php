@@ -20,6 +20,8 @@ class CreateAmphursTable extends Migration
             $table->string('amphur_code')->nullable();
             $table->string('amphur_name')->nullable();
             $table->timestamps();
+
+            $table->foreign('province_id')->references('id')->on('provinces');
         });
     }
 
