@@ -13,6 +13,8 @@ class CreateAccountTable extends Migration {
 			$table->timestamps();
 			$table->string('firstname', 70)->nullable();
 			$table->string('lastname', 70)->nullable();
+			$table->string('email', 50);
+			$table->string('password', 30);
 			$table->string('telephone', 20)->nullable();
 			$table->string('mobile', 20)->nullable();
 			$table->string('fax', 20)->nullable();
