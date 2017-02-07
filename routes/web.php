@@ -17,6 +17,8 @@ Route::get('lang/{lang}',function($lang){
 	return redirect()->back();
 });
 
+Route::get('car','CarController@index');
+
 Route::get('travel','TravelController@index');
 Auth::routes();
 // register
